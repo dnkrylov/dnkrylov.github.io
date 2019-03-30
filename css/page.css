@@ -1,0 +1,736 @@
+/* Main Layout */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
+html {
+	position: relative;
+}
+.page-header {
+	margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+h3 {
+	color: #0799dc;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	/* margin-bottom: 1520px; */
+}
+.wrapper {
+	min-height: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+a img, a:focus {
+    border: 0;
+	outline: none;
+}
+a, a:active, a:visited {
+	color: #0799dc;
+	text-decoration: none;
+	transition: all 0.2s linear;
+}
+/* USER PROFILE PAGE */
+ .profile {
+	margin-bottom: 20px;
+	padding: 30px;
+	background-color: rgba(214, 224, 226, 0.2);
+	border-radius: 5px;
+	border: 1px solid #EFEFEF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.profile.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.profile.hovercard .profile-background {
+    height: 150px;
+}
+.profile-background img {
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.profile.hovercard .useravatar {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+.profile.hovercard .useravatar h3 {
+	color: #FFF;
+	font-size: 20px;
+	text-transform: none;
+	letter-spacing: 1px;
+    position: absolute;
+    top: -42px;
+    left: 0;
+    right: 0;
+}
+.profile.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+.profile.hovercard .profile-info {
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.profile.hovercard .profile-info .profile-title {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1;
+    color: #FFF;
+}
+.profile.hovercard .profile-info {
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+a:hover, a:visited:hover {
+	color: #000;
+	text-decoration: none;
+}
+.navbar-default {
+	font-size: 16px;
+	background: #FFF;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.15)
+}
+.nor-brand {
+	color: #777;
+	line-height: 40px;
+	font-weight: bold;
+}
+.nor-nav {
+	border-top: 3px solid #0799dc;
+	text-transform: uppercase;
+}
+.nor-nav li {
+	padding: 10px 15px 10px 15px;
+	margin-bottom: -1px;
+}
+.nor-nav li > a {
+	color: #333;
+    text-decoration: none;
+}
+.nor-nav li > a:hover {
+	color: #0799dc;
+	text-decoration: none;
+}
+.nor-nav-dropdown {
+	border-top: 3px solid #0799dc;
+	border-radius: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.15)
+}
+.nor-nav-dropdown li {
+	padding: 0px;
+	border-right: 0px;
+	text-transform: none;
+}
+/* CAROUSEL SETTINGS */
+/* Carousel base class */
+.carousel {
+  height: 385px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 10px;
+  left: 19%;
+  padding: 15px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 385px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 385px !important;
+}
+/* mobile device hack */
+@media (max-width: 480px) {
+	.carousel {
+	  height: 275px;
+	}
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption {
+	  z-index: 10;
+	}
+
+	/* Declare heights because of positioning of img element */
+	.carousel .item {
+	  height: 275px;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-width: 100%;
+	  height: 275px;
+	}
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 1.4;
+    }
+	.carousel-inner > .item > img {
+	   height: 275px;
+	}
+	.carousel-inner > .item > .img-mobile {
+	   height: 275px;
+	}
+}
+@media (max-width: 640px) {
+	.carousel {
+	  height: 325px;
+	}
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption {
+	  z-index: 10;
+	}
+
+	/* Declare heights because of positioning of img element */
+	.carousel .item {
+	  height: 325px;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-width: 100%;
+	  height: 325px;
+	}
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 1.4;
+    }
+	.carousel-inner > .item > img {
+	   height: 325px;
+	}
+	.carousel-inner > .item > .img-mobile {
+	   height: 325px;
+	}
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.carousel-inner > .item > img {
+	/* height: auto; */
+}
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+    -webkit-transition: opacity .6s; /*adjust timing here */
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .fa-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .fa-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.footer {
+  clear: both;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #2A2A2A;
+}
+.under {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ /* height: 45px; */
+  padding: 10px 1.2% 10px 1.2%;
+  line-height: 43px;
+  border-top: 1px solid #2e2e2e;
+  background-color: #252525;
+  color: #F3F3F3;
+  line-height: 20px;
+}
+.foot_h5 {
+	color: #efefef;
+	text-transform: uppercase;
+}
+.foot-links ul {
+}
+.foot-links li > a, a:visited {
+	color: #0799dc;
+	display: block;
+	padding: 3px;
+}
+.foot-links li > a:hover {
+	background-color: #2c2c2c;
+	color: #F2F2F2;
+}
+.about_foot {
+	color: #efefef;
+}
+.list-group-item-foot {
+    background-color: none;
+	border: 0px;
+	display: block;
+    margin-bottom: 2px;
+    padding: 8px 13px;
+    position: relative;
+	transition: all 0.2s linear;
+}
+.list-group-item-foot:first-child {
+	border-radius: 0px;
+}
+.list-group-item-foot:last-child {
+	border-radius: 0px;
+	border-bottom: 0px;
+}
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	margin-right: 8px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	border-radius: 15px;
+	border: none;
+	background: #2c2c2c;
+}
+.form-control:focus {
+    border-color: #0799dc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(58,161,197,0.6);
+}
+.btn-primary, a.btn-primary {
+	background-color: #4eb0cd;
+	border-color: #3e9cb8;
+	color: #fff;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #4eb0cd;
+  border-color: #3e9cb8;
+}
+.btn-primary:hover, a.btn-primary:hover {
+    background-color: #3b92ac;
+    border-color: #31849c;
+    color: #fff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3b92ac;
+  border-color: #31849c;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #3b92ac;
+  border-color: #31849c;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #3b92ac;
+  border-color: #31849c;
+}
+.btn-primary .badge {
+  color: #4eb0cd;
+  background-color: #fff;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #4eb0cd;
+    border-color: #3e9cb8;
+    color: #fff;
+    cursor: default;
+    z-index: 3;
+}
+
+.teamanzeige{
+	width: 100%;
+	height: 100%;
+	float:left;
+	margin-bottom:30px;
+}
+
+.teampic{
+	width: 100%;
+	max-width: 500px;
+	float:left;
+	height:100%;
+}
+
+.teamright{
+	font-family:'Open Sans', sans-serif;
+	font-size: 30px;
+	width: 80%;
+	text-align:left;
+	margin-left:10px;
+	text-indent:20px;
+}
+
+.teambe{
+	height: 100%;
+	max-height:260px;
+	overflow:hidden;
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 56%;
+	float:right;
+	text-align:justify;
+}
+
+.member{
+	float:right;
+	width:20%;
+	text-align:right;
+	margin-top:10px;
+}
+
+/* -------------------------------------------------- */
+/* Teamansicht Details */
+/* -------------------------------------------------- */
+
+.userbg{
+	width: 48%;
+	float:left;
+	margin-bottom:20px;
+	border: 2px solid #f29a30;
+	margin-left:1%;
+	background-color:#121212;
+}
+
+.userbgp{
+	width: 68%;
+	float:left;
+	margin-bottom:20px;
+	border:2px solid #0799dc;
+	background-color:transparent;
+}
+
+.userbgp1{
+	width:100%;
+	float:right;
+	margin-bottom:20px;
+	border:2px solid #0799dc;
+	margin-left:1%;
+	background-color:transparent;
+}
+
+.userdes{
+	width: 70%;
+	float:left;
+	padding:10px;
+}
+
+.userdes3{
+	width: 100%;
+	float:left;
+	padding:10px;
+}
+
+.userdes2{
+	width: 100%;
+	float:left;
+	padding:10px;
+}
+
+.userot{
+	width:30%;
+	float:right;
+}
+
+.field0{
+	width: 100%;
+	height:50px;
+	background-color:#0799dc;
+	float:left;
+	font-family:'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight:bold;
+	padding:15px;
+	text-transform:uppercase;
+	margin-bottom:4px;
+}
+
+.field01{
+	width: 100%;
+	height:50px;
+	background-color:#121212;
+	color:#0799dc;
+	float:left;
+	font-family:'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight:bold;
+	padding:15px;
+	text-transform:uppercase;
+	margin-bottom:4px;
+}
+
+.field1{
+	width: 100%;
+	height:50px;
+	background-color:#fff;
+	float:left;
+	font-family:'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight:300;
+	padding:15px;
+	text-transform:uppercase;
+	margin-bottom:4px;
+}
+
+.field2{
+	width: 100%;
+	background-color:#fff;
+	float:left;
+	font-family:'Open Sans', sans-serif;
+	height:50px;
+	font-size: 15px;
+	font-weight:300;
+	padding:15px;
+	text-transform:uppercase;
+	margin-bottom:4px;
+}
+
+.statususer{
+	float:right;
+}
+
+.rotpic{
+	padding:10px;
+	width: 100%;
+	height: 100%;
+	max-width:190px;
+}
+
+
+.socialuser{
+	text-align:center;
+	width:100%;
+}
+.blur{
+	font-size:26px !important;
+	padding: 17px 10px 10px 17px;
+}
+
+.linehead{
+	color:#0799dc !important;
+}
+
+/* -------------------------------------------------- */
+/* Ende Update v1.3 */
+/* -------------------------------------------------- */

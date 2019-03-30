@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 5frags.org/code.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Dec 2016 19:44:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Clanpage using webSPELL 4 CMS">
+    <meta name="author" content="webspell.org">
+    <meta name="copyright" content="Copyright 2005-2015 by webspell.org">
+    <meta name="generator" content="webSPELL">
+
+    <title>BBCode Guide</title>
+    <base >
+    <link href="components/bootstrap.min.css" rel="stylesheet"><link href="components/font-awesome.min.css" rel="stylesheet"><link href="components/scrolltotop/css/scrolltotop.css" rel="stylesheet"><link href="components/profile.css" rel="stylesheet">
+    <link href="_stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <a name="Top"></a>
+
+    <div class="page-header"><h1>BBCode Guide</h1></div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Text Formatting</h4>
+            <ul class="list-unstyled">
+                <li><a href="#1">How to create bold, italic and underlined text</a></li>
+                <li><a href="#2">How to change the text colour or size</a></li>
+                <li><a href="#3">Can I combine formatting tags?</a></li>
+            </ul>
+
+            <h4>Quoting and outputting fixed-width text</h4>
+            <ul class="list-unstyled">
+                <li><a href="#4">Quoting text in replys</a></li>
+                <li><a href="#5">Outputting code</a></li>
+            </ul>
+
+            <h4>Generating lists</h4>
+            <ul class="list-unstyled">
+                <li><a href="#6">Creating an unordered list</a></li>
+                <li><a href="#7">Creating an ordered list</a></li>
+            </ul>
+
+            <h4>Creating Links</h4>
+            <ul class="list-unstyled">
+                <li><a href="#8">Linking to another site</a></li>
+            </ul>
+
+            <h4>Showing images in posts</h4>
+            <ul class="list-unstyled">
+                <li><a href="#9">Adding an image to a post</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Text Formatting</h1>
+    </div>
+
+    <a name="1"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">How to create bold, italic and underlined text</h3>
+        </div>
+        <div class="panel-body">
+            <p>BBCode includes tags to allow you to quickly change the basic style of your text. This is achieved in the following ways:</p>
+            <ul>
+                <li>
+                    bold text: <strong>[b]</strong>Hello<strong>[/b]</strong><br>
+                    will become <strong>Hello</strong>
+                </li>
+                <li>
+                    underlined text: <strong>[u]</strong>Good Morning<strong>[/u]</strong><br>
+                    becomes <span class="underline">Good Morning</span>
+                </li>
+                <li>
+                    italic text: <strong>[i]</strong>Great!<strong>[/i]</strong><br>
+                    would give this is <em>Great!</em>
+                </li>
+            </ul>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <a name="2"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">How to change the text colour or size</h3>
+        </div>
+        <div class="panel-body">
+            <p>To alter the color or size of your text the following tags can be used. Keep in mind that how the output appears will depend on the viewers browser and system:</p>
+            <ul>
+                <li>
+                    <strong>[color=red]</strong>Hello<strong>[/color]</strong><br>
+                    or<br>
+                    <strong>[color=#FF0000]</strong>Hello<strong>[/color]</strong><br>
+                    <!-- htmllint attr-bans=false -->
+                    will both output <span style="color:#FF0000">Hello</span>
+                </li>
+                <li>
+                    <strong>[size=1]</strong>SMALL<strong>[/size]</strong><br>
+                    will generally be <font size="1">SMALL</font><br>
+                    or:<br><br>
+                    <strong>[size=5]</strong>HUGE!<strong>[/size]</strong><br>
+                    will be <font size="5">HUGE!</font>
+                </li>
+                <li>
+                    <strong>[font=courier]</strong>Courier<strong>[/font]</strong><br>
+                    will generally be <font face="Courier">Courier</font>
+                </li>
+            </ul>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <a name="3"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Can I combine formatting tags?</h3>
+        </div>
+        <div class="panel-body">
+            <p>Yes, of course you can, for example to get someones attention you may write:</p>
+            <strong>[size=5][color=red][b]</strong>LOOK AT ME!<strong>[/b][/color][/size]</strong><br>
+            this would output <font color="#FF0000" size="5"><strong>LOOK AT ME!</strong></font>
+
+            <p>We don't recommend you output lots of text that looks like this though! Remember it is up to you, the poster to ensure tags are closed correctly.</p>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Quoting and outputting fixed-width text</h1>
+    </div>
+
+    <a name="4"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Quoting and outputting fixed-width text</h3>
+        </div>
+        <div class="panel-body">
+
+            <strong>Quoting text in replys</strong>
+            <ul>
+                <li>
+                    <strong>[quote=Mr. Blobby]</strong>The text Mr. Blobby wrote would go here<strong>[/quote]</strong>
+                </li>
+                <li>
+                    <strong>[quote]</strong>The text Mr. Blobby wrote would go here<strong>[/quote]</strong>
+                </li>
+            </ul>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <a name="5"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Outputting code</h3>
+        </div>
+        <div class="panel-body">
+
+            <p><strong>[code]</strong>echo "This is some code";<strong>[/code]</strong></p>
+
+            <p>All formatting used within <strong>[code][/code]</strong> tags is retained when you later view it.</p>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Generating lists</h1>
+    </div>
+
+    <a name="6"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Creating an unordered list</h3>
+        </div>
+        <div class="panel-body">
+
+            <strong>[list]</strong><br>
+            <strong>[*]</strong>Red<br>
+            <strong>[*]</strong>Blue<br>
+            <strong>[*]</strong>Yellow<br>
+            <strong>[/list]</strong><br><br>
+            This would generate the following list:
+            <ul>
+                <li>Red</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+            </ul>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <a name="7"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Creating an ordered list</h3>
+        </div>
+        <div class="panel-body">
+            <strong>[list=1]</strong><br>
+            <strong>[*]</strong>Red<br>
+            <strong>[*]</strong>Blue<br>
+            <strong>[*]</strong>Yellow<br>
+            <strong>[/list=1]<br><br>This would generate the following list:</strong>
+            <ol>
+                <li>Red</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+            </ol>
+            <strong>[list=a]</strong><br>
+            <strong>[*]</strong>Red<br>
+            <strong>[*]</strong>Blue<br>
+            <strong>[*]</strong>Yellow<br>
+            <strong>[/list=a]<br><br>This would generate the following list:</strong>
+            <ol type="a">
+                <li>Red</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+            </ol>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Creating Links</h1>
+    </div>
+
+    <a name="8"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Linking to another site</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>
+                    <strong>[url=http://www.webspell.at]</strong>webSPELL<strong>[/url]</strong><br>
+                    This would generate the following link, <a href="http://www.webspell.at/" target="_blank">webSPELL</a>
+                </li>
+                <li>
+                    <strong>[url]</strong>http://www.webspell.org<strong>[/url]</strong><br>
+                    This would generate the following link, <a href="http://www.webspell.org/" target="_blank">www.webspell.org</a>
+                </li>
+                <li>
+                    <strong>[email]</strong>no.one@domain.adr<strong>[/email]</strong><br>
+                    which will output <a href="mailto:no.one@domain.adr">no.one@domain.adr.</a><br>
+                    <strong>[email=no.one@domain.adr]</strong>email me<strong>[/email]</strong><br>
+                    which will output <a href="mailto:no.one@domain.adr">email me</a>
+                </li>
+            </ul>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Showing images in posts</h1>
+    </div>
+
+    <a name="9"></a>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Adding an image to a post</h3>
+        </div>
+        <div class="panel-body">
+            <strong>[img]</strong>http://www.webspell.org/images/linkus/1.gif<strong>[/img]</strong><br><br>
+            As noted in the URL section above you can wrap an image in a  <strong>[url][/url]</strong> tag if you wish, eg.<br>
+            <strong>[url=http://www.webspell.org/][img]</strong>http://www.webspell.org/images/linkus/1.gif<strong>[/img][/url]</strong><br>
+            would generate:<br>
+            <a href="http://www.webspell.org/" target="_blank">
+                <img src="../www.webspell.org/images/linkus/1.gif" alt="webSPELL">
+            </a><br><br>
+            <a href="#Top">Back to top</a>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from 5frags.org/code.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Dec 2016 19:44:46 GMT -->
+</html>
